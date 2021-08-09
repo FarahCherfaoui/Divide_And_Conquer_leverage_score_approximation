@@ -1,4 +1,4 @@
-# Divide And Conquer (DAC) method for approximating the ridge leverage score
+# Divide And Conquer (DAC) method for ridge leverage score approximation.
 
 Python code implementing the Divide And Conquer (DAC) method for approximating the ridge leverage score proposed in the paper: Revisiting the Three-Sample Problem and Nyström Approximation from Discrete RKHSs (submitted to NeurIPS 2021, number 10610).
 
