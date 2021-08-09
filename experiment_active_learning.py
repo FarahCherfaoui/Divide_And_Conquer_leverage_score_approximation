@@ -68,16 +68,14 @@ for j in range(nb_repeat):
 		model = SVC(kernel = 'rbf', gamma=kernel_parameter).fit(X_train[selected], y_train[selected])
 		test_score[i] += model.score(X_test, y_test)
 
-print("test_score: ", test_score)
 test_score /= nb_repeat
-print("test_score: ", test_score)
 
 
 
 
 # plot the error
 plt.plot([n*pr for pr in pr_label], test_score, label = 'DAC')
-plt.xlabel('label budget')
+plt.xlabel('budget of label')
 plt.ylabel(r'score')
 plt.legend()
 plt.show()
