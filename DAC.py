@@ -1,3 +1,12 @@
+import numpy as np
+from sklearn.metrics.pairwise import *
+import sys
+from scipy.linalg import svd
+from math import *
+import os
+import scipy.linalg as spl
+
+
 def DAC(X, lambda_, sample_size, kernel_function, kernel_param):
   """
   This function computes an approximation of the ridge leverage score, using a divide and conquer strategy.
