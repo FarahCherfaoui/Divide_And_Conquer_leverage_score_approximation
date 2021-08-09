@@ -2,11 +2,11 @@
 
 Python code implementing the Divide And Conquer (DAC) method for approximating the ridge leverage score proposed in the paper: Revisiting the Three-Sample Problem and Nyström Approximation from Discrete RKHSs (submitted to Nips 2021, number 10610).
 
-The python version used is: 3.7.2
+The code is in: python 3.7.2
 
 ## Usage of the DAC function
 ```python
-DAC(X, lambda_, sample_size, kernel_function, kernel_param):
+DAC(X, lambda_, sample_size, kernel_function, kernel_param)
 ```
 ### Input
 * X: numpy array of size (n, d) where n is the number of data and d number of features.  
@@ -43,4 +43,4 @@ selected = np.random.choice(n, size=int(0.1*n), replace=False, p=p)
 
 #compute Nyström approximation using the selected data  
 X_mapped, inv_K_s = nystrom_approximation_fit(X, selected, rbf_kernel, kernel_parameter)  
-approximated_K = np.dot(X_mapped, X_mapped.T)  ```
+approximated_K = np.dot(X_mapped, X_mapped.T)
