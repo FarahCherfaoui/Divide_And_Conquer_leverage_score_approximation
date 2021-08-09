@@ -1,4 +1,4 @@
-# Revisiting-the-Three-Sample-Problem-and-Nystr-m-Approximation-from-Discrete-RKHSs-
+# Divide And Conquer (DAC) method for approximating the ridge leverage score
 
 Python code implementing the Divide And Conquer (DAC) method for approximating the ridge leverage score proposed in the paper: Revisiting the Three-Sample Problem and Nyström Approximation from Discrete RKHSs (submitted to Nips 2021, number 10610).
 
