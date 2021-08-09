@@ -42,5 +42,5 @@ p = approximated_leverage_scores/np.sum(approximated_leverage_scores)
 selected = np.random.choice(n, size=int(0.1*n), replace=False, p=p)  
 
 #compute Nyström approximation using the selected data  
-X_mapped, inv_K_s = kernel_approximation_fit(X, selected, rbf_kernel, kernel_parameter)  
+X_mapped, inv_K_s = nystrom_approximation_fit(X, selected, rbf_kernel, kernel_parameter)  
 approximated_K = np.dot(X_mapped, X_mapped.T)  ```
